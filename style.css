@@ -1,63 +1,60 @@
 *{
-padding: 0;
-margin: 0;
+    padding: 0;
+    margin: 0;
 }
 header{
     height: 100px;
     width: 100%;
-    background-image: linear-gradient(to right,red,#580e67);
+    background-image: linear-gradient(to right, red ,rgba(89, 0, 255, 0.651));
 }
 #logobox{
     width: 30%;
-    height: 100px;
+    height: 100%;
     float: right;
     background-color: #fafafa;
 }
-#idh1{
+#h1header{
     float: left;
     line-height: 100px;
-    padding:0 15px;
+    padding: 0 15px;
+}
+header a{
+    color: black;
 }
 #logo{
-height: 100%;
-border-radius: 50%;   
-
-}
-nav{
-    width: 70%;
-    text-align: center;
-
-}
-
-header a{
-    color: #000;
+    height: 100%;
+    border-radius: 50%;
 }
 nav a{
     text-decoration: none;
     color: white;
     font-weight: bold;
+    display: inline-block;
 }
 nav li{
     display: inline-block;
     line-height: 100px;
     width: 100px;
     text-align: center;
-    
+}
+nav{
+    width: 70%;
+    text-align: center;
+
 }
 nav a:hover{
-    background-color: #fafafa;
-    color: #000;
-    width: 100%;
+    background-color: white;
+    color: black;
     height: 100%;
-    display: inline-block;
+    width: 100%;
 }
 main{
     width: 100%;
     height: 450px;
-    background-color: red;
+    background-color: rgb(151, 71, 216);
     border-top: 3px solid white;
-    animation-name: changebackground ;
-    animation-duration:10s ;
+    animation-name: changb;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
 
 }
@@ -70,15 +67,14 @@ aside{
 }
 aside img{
     width: 90%;
-    height: 200px;
 
+    
 }
-#h1asid{
-    padding: 20px ;
-    border-bottom: 2px solid red;
-
+#h1assid{
+    padding: 20px 0px;
+    border-bottom: 3px solid red;
 }
-article{
+#article{
     width: 70%;
     height: 450px;
     float: right;
@@ -87,53 +83,115 @@ article{
 #box{
     padding: 15px;
     text-align: center;
-    background-color: #fafafa;
+    position: absolute;
     width: 400px;
     height: 180px;
-    position: absolute;
-    top:50%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-
-    
+    transform: translate(-50%,-50%);
+    background-color: #fafafa;
 }
 #box h1{
     border-bottom: 3px solid red;
     padding: 15px 0;
 }
 #box p{
-    padding: 15px;
-    font-family: monospace;
+    font-family: 'Amiri', serif;
     text-align: justify;
+    font-size: small;
+    
 }
 #contact-box{
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 15px;
 }
-
 #contact-box img{
     width: 45px;
-    height: 45px;
-    margin-top: 15px;
-    border-bottom: 3px double red;
+    border-bottom: 2px double red;
     padding-bottom: 15px;
-    padding-left: 3px;
-    padding-right: 3px;
+
+    
 }
 #contact-box img:hover{
     width: 55px;
-    height: 55px;
-    border-bottom: 3px sold black;
+    border-bottom: 2px solid black;
+
 }
-@media only screen and (min-width:1140) and (max-width:1070px){
-    #logobox{
-        width: 36%;
+
+@media only screen and (min-width:940px) and (max-width:1070px){
+    #logoBox{
+        width: 35%;
+    }
+    #article{
+        width: 65%;
+    }
+    aside{
+        width: 35%;
     }
 }
-@keyframes changebackground{
-    0%{background-color:rgb(21, 97, 84) ;}
-    25%{background-color: #580e67;}
-    50%{background-color: rgb(118, 29, 219);}
-    100%{background-color: rgb(231, 193, 121);}
+@media only screen and (max-width:940px){
+    #logoBox{
+        width: 40%;
+    }  
 }
+@media only screen and (max-width:801px){
+    header, main{
+        height: auto;
+    }
+    #logoBox{
+        width: 100%;
+        text-align: center;
+    }
+    #h1Header,#logo{
+        float: none;
+    }
+    span a{
+        text-decoration: none;
+    }
+    nav{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+    }
+    #article{
+        height: 230px;
+        width:100%;
+    
+    }
+}
+@media only screen and (max-width:506px){
+    nav li{
+        display: block;
+        width:100%;
+    }
+    nav{ clear: both !important;}
+}
+#course1,#course2 {
+		text-align: center;
+		clear: both;
+	}
+    #course1 img,#course2 img {
+        
+		width:32% ;
+        height: 300px;
+        margin-top: 10px;
+	}
+    
+
+	
+
+
+@keyframes changb {
+    0%{background-color: #580c67;}
+    25%{background-color: #fafafa;}
+    50%{background-color: #fb0309;}
+    75%{background-color: #faebd7;}
+    100%{background-color: #b73ba9;}
+
+
+    
+}
+
